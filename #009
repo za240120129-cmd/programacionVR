@@ -1,0 +1,31 @@
+# Iniciamos los contadores 
+Altas= 0
+Bajas = 0
+Ciclo = 0
+
+White ture:
+   #simulamos ls señal recibida (puede ser '1' o '0')
+    señal = ramdom .choice ['1 ,'0'])
+
+
+    # contamos segun el valor 
+    if señal == '1':
+      Altas+= 1
+    else:
+      Bajas+= 1
+
+      Ciclo+= 1
+      # terminamos despues de 20 ciclos 
+      if ciclo >=20:
+           break
+
+
+           # comparacion final y de indicador 
+           if Altas>Bajas:
+             indicador= "alto flujo de datos "
+        else:
+          indicador="indicador  apagado"
+
+          print("señales altas:", Altas)
+          print("señales bajas:", Bajas)
+          print("indicador:",  Indicador)
